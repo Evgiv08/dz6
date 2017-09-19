@@ -3,13 +3,6 @@
   font-family: "Lato";
   src: url(../fonts/LatoRegular.woff);
 }
-/* @media screen and (max-width: 600px) {
-
-	.navbar {
-		width: 600px;		
-	}
-
-} */
 header {
 	min-height: 40px;
 	box-shadow: 0 1px 0 #e6e9ed;
@@ -66,29 +59,6 @@ header {
 .main-menu {
 	margin-top: 27px;
 }
-.navbar .nav li a {
-	color: #506a85;
-	font-family: "Source Sans Pro";
-	font-size: 15px;
-	font-weight: 700;
-	text-transform: uppercase;
-	padding: 22px;
-	padding-bottom: 18px;
-	border: 1px solid white;
-}
-.navbar .nav > li > a:hover {
-	color: #00bc9c;
-	font-family: "Source Sans Pro";
-	font-size: 15px;
-	font-weight: 700;
-	text-transform: uppercase;
-	border: 1px solid #e6e9ed;
-	background-color: #f5f7fa;
-}
-.navbar .nav > .hovers > a:hover {
-	border-bottom: none;
-	z-index: 2;
-}
 .menu-logo:hover {
 	img {
 		filter: brightness(0) invert(1);
@@ -120,6 +90,42 @@ header {
 }
 
 
+
+.navbar .nav li a {
+	color: #506a85;
+	font-family: "Source Sans Pro";
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 22px;
+	padding-bottom: 18px;
+}
+.navbar .nav li {
+	border: 1px solid white;
+
+}
+
+.navbar .nav>li:hover {
+	color: #00bc9c;
+	font-family: "Source Sans Pro";
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 1px solid #e6e9ed;
+	background-color: #f5f7fa;
+	box-sizing: border-box;
+}
+.navbar .nav > .hovers:hover {
+	z-index: 2;
+	border-bottom: 1px solid #f5f7fa;
+	color: #00bc9c;
+	box-sizing: border-box;
+}
+.navbar .nav>li>a:hover {
+	color: #00bc9c;
+}
+
+
 .hovers {
 	position: relative;
 }
@@ -136,7 +142,6 @@ header {
 	position: absolute;
 	left: -763px;
     top: 59px;
-    z-index: 1;
 	h3 {
 		color: #506a85;
 		font-family: Lato;
@@ -230,9 +235,6 @@ header {
 		}
 	}
 }
-
-
-
 .bg-design {
 	background-image: url(../img/bg.jpg);
 	height: 880px;
@@ -364,9 +366,6 @@ header {
 .two-img {
 	margin-top: 78px;
 	text-align: center;
-	.motel {
-		// padding-left: 0;
-	}
 	.bg-white {
 		width: 570px;
 		height: 122px;
@@ -484,10 +483,10 @@ footer {
 			font-size: 15px;
 			font-weight: 700;
 			text-decoration: none;
-				img {
+			img {
 				margin-bottom: 0;
 				margin-left: 7px;	
-				}
+			}
 		}
 	}
 	.footer-bl2 {
